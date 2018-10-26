@@ -54,3 +54,33 @@ Special Forms
 -   `or` evaluate the operands until one evaluates to a true value or
     none are left, and return the value of the most recently evaluated
     expression
+
+Procedures vs. Functions
+------------------------
+
+The difference here is explained: that a function is declarative, while
+a procedure is effective. In order to be a procedure, an expression must
+follow some process to find the answer, rather than simply describe the
+answer to a question. As an example, the following are given as a
+definition of the square root.
+
+``` {.scheme}
+(define (sqrt-iter guess x)
+  (if (good-enough? guess x)
+        guess
+              (sqrt-iter (improve guess x)
+                               x)))
+(define (improve guess x)
+  (average guess (/ x guess)))
+
+(define (average x y)
+  (/ (+ x y) 2))
+
+(define (good-enough? guess x)
+  (< (abs (- (square guess) x)) 0.001))
+
+(define (sqrt x)
+  (sqrt-iter 1.0 x))
+
+(sqrt 9) ;; 3
+```

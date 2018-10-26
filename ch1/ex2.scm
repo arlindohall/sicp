@@ -14,9 +14,10 @@
 ;; $$ \frac{5 + 4 + 2 - (3 - (6 + 4/5))}{3(6 - 2)(2 - 7)} $$ 
 ;; $$ = \frac{-37}{150} $$ 
 ;; $$ = -0.247 $$
+(define default-dir "$HOME/var/sicp/")
 
-(or (= (/ (- (+ 5 4 2)
-             (- 3 (+ 6 (/ 4 5))))
-          (* 3 (- 6 2) (- 2 7)))
-       -37/150)
-    (error "Value of expression is not as expected"))
+(assert (= (/ (- (+ 5 4 2)
+                 (- 3 (+ 6 (/ 4 5))))
+              (* 3 (- 6 2) (- 2 7)))
+           -37/150)
+        "Value of expression is not what we expected")

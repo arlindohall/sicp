@@ -2,6 +2,7 @@
 ;; The procedure below is to return the sum of the squares of the larger two
 ;; of a group of three numbers. I use the procedure `sum-of-squares` from the
 ;; text.
+(define default-dir "$HOME/var/sicp/")
 
 (define (square x) (* x x))
 (define (sum-of-squares x y)
@@ -15,5 +16,5 @@
 ;; As an example, the sum-of-squares of `3` and `4` is `25`, and so
 ;; `(f 2 3 4)` should return `25`
 
-(or (equal? (f 2 3 4) 25)
-    (error "Expected (f 2 3 4) to equal 25"))
+(assert (equal? (f 2 3 4) 25)
+        "Expected (f 2 3 4) to equal 25")
