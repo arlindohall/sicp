@@ -1,6 +1,6 @@
 ;; Exercise 1.28
 ;; Implement the Miller-Rabin test
-(load "util/sqrt.scm")
+(load "util/square.scm")
 
 ;; I ripped this straight off of community.schemewiki.org
 ;; I could not understand the question the way it was worded

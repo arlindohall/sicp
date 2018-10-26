@@ -1,7 +1,6 @@
 ;; Exercise 1.27
+(load "util/square.scm")
 (load "ch1/ex22.scm")
-
-(define (square x) (* x x))
 
 ;; (a^n modulo n)
 (define (expmod base exp m)

@@ -11,7 +11,7 @@
 ;; To demonstrate this, I'll show that using the cond logic works. However,
 ;; demonstrating the infinite regress of the new-if statement would break the
 ;; process, so it will be "left as an exercise to the reader".
-(load "util/sqrt.scm")
+(load "util/square.scm")
 
 (define (new-if predicate then-clause else-clause)
   (cond (predicate then-clause)

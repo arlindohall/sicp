@@ -4,12 +4,13 @@
 ;;   change $a$ and $n$ at each call in order to keep the expression constant,
 ;;   so that at the end of the call pattern, all values are known and one of
 ;;   the values is the answer we are looking for.
+(load "util/square.scm")
+
 (define (fast-expt b n)
   (fast-expt-iter 1 b n))
 
 ;; Invariant -> a * b^n
 (define (fast-expt-iter a b n)
-  (define (square m) (* m m))
   (cond ((= n 0) a)
         ((even? n) (fast-expt-iter a
                                    (square b)

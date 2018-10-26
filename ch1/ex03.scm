@@ -2,7 +2,8 @@
 ;; The procedure below is to return the sum of the squares of the larger two
 ;; of a group of three numbers. I use the procedure `sum-of-squares` from the
 ;; text.
-(define (square x) (* x x))
+(load "util/square.scm")
+
 (define (sum-of-squares x y)
   (+ (square x) (square y)))
 
