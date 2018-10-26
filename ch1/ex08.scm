@@ -8,8 +8,6 @@
 
 ;; This is really just an exercise in prefix notation, as well as a chance to
 ;; work out the logic of the sqrt procedure for oneself.
-(define default-dir "$HOME/var/sicp/")
-
 (define (cube x) (* x x x))
 
 (define (cbrt-iter guess x)

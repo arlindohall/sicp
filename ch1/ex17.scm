@@ -2,8 +2,6 @@
 ;; Replace the existing `*` primitive with a procedure which, like
 ;;   `fast-expt`, uses a logarithmic amount of calls (though not a logarithmic
 ;;   amount of space) when generating a process.
-(define default-dir "$HOME/var/sicp/")
-
 (define (new* a b)
   (if (= b 0)
       0

@@ -1,7 +1,5 @@
 ;; Exercise 1.10
 ;; The procedure for Ackerman's function from the book is below.
-(define default-dir "$HOME/var/sicp/")
-
 (define (A x y)
   (cond ((= y 0) 0)
         ((= x 0) (* 2 y))

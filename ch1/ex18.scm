@@ -1,7 +1,5 @@
 ;; ## Exercise 1.18
 ;; The same as 1.17, but with a logarithmic amount of space.
-(define default-dir "$HOME/var/sicp/")
-
 (define (fast-new* a b)
   (fast-new*-iter 0 a b))
 

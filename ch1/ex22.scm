@@ -4,7 +4,6 @@
 ;;   with a running process easily and cleanly (for example by interrupting)
 ;;   without the use of read procedures, I'll also add in a parameter to limit
 ;;   the number of matches we find.
-(define default-dir "$HOME/var/sicp/")
 (load "ch1/ex21") ;; Definition of prime from previous example
 
 ;; Import definitions from example

@@ -1,8 +1,6 @@
 ;; ## Exercise 1.21
 ;; Find the smallest divisors of 199, 1999, and 19999. The first two are
 ;;   prime, but the third is not.
-(define default-dir "$HOME/var/sicp/")
-
 (define (smallest-divisor n)
   (find-divisor n 2))
 (define (find-divisor n test-divisor)

@@ -2,7 +2,6 @@
 ;; To prove that Fib(n)=round(ϕn5√) using deduction, we first need to show,
 ;; using the hint from the exercise, that Fib(1)=round(ϕ5√) and
 ;; Fib(2)=round(ϕ25√).
-(define default-dir "$HOME/var/sicp/")
 (load "util/fib.scm")
 (load "util/close.scm")
 

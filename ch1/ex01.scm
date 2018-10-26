@@ -1,6 +1,4 @@
 ;; Evaluate the following expressions
-(define default-dir "$HOME/var/sicp/")
-
 ;; I'll just drop all of these in `eq?` statements to verify the value
 
 ;; Simple expressions

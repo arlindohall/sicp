@@ -2,8 +2,6 @@
 ;; The procedure below is to return the sum of the squares of the larger two
 ;; of a group of three numbers. I use the procedure `sum-of-squares` from the
 ;; text.
-(define default-dir "$HOME/var/sicp/")
-
 (define (square x) (* x x))
 (define (sum-of-squares x y)
   (+ (square x) (square y)))

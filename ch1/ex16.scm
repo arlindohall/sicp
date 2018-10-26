@@ -4,8 +4,6 @@
 ;;   change $a$ and $n$ at each call in order to keep the expression constant,
 ;;   so that at the end of the call pattern, all values are known and one of
 ;;   the values is the answer we are looking for.
-(define default-dir "$HOME/var/sicp/")
-
 (define (fast-expt b n)
   (fast-expt-iter 1 b n))
 

@@ -9,8 +9,6 @@
 ;; normal order interpreter, the two expressions (0 and (p)), will be
 ;; substituted into the original definition, and since the if statement does
 ;; not evaluate the alternative, the statement p will never be evaluated.
-(define default-dir "$HOME/var/sicp/")
-
 (define (p) (p))
 (define (test x y)
   (if (= x 0)

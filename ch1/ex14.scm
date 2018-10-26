@@ -1,6 +1,5 @@
 ;; Exercise 1.14
 ;; The process diagram of the count-change process is:
-(define default-dir "$HOME/var/sicp/")
 (load "util/count-change.scm")
 
 (count-change 11)

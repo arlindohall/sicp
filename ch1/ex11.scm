@@ -1,8 +1,6 @@
 ;; Exercise 1.11
 ;; A recursive process for this function is easy to write a procedure for,
 ;; since it basically means re-writing the formula in LISP.
-(define default-dir "$HOME/var/sicp/")
-
 ;; f(n)=n  if  n<3  and  f(n)=f(n−1)+2f(n−2)+3f(n−3)  if  n≥3 
 
 (define (f n)

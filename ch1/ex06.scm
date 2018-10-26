@@ -11,7 +11,6 @@
 ;; To demonstrate this, I'll show that using the cond logic works. However,
 ;; demonstrating the infinite regress of the new-if statement would break the
 ;; process, so it will be "left as an exercise to the reader".
-(define default-dir "$HOME/var/sicp/")
 (load "util/sqrt.scm")
 
 (define (new-if predicate then-clause else-clause)

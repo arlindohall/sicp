@@ -2,8 +2,6 @@
 ;; The two procedures are shown below, with helper methods. The procedures
 ;; here are re-named new+ and new+tail to avoid errors due to re-defining the
 ;; + procedure.
-(define default-dir "$HOME/var/sicp/")
-
 (define (inc x)
   (+ x 1))
 (define (dec x)

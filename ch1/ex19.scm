@@ -1,6 +1,5 @@
 ;; ## Exercise 1.19
 ;; The special case of $\{a \leftarrow bq + aq + ap, b \leftarrow bp + aq\}$ is $\{q = 1, p = 0\}$.
-(define default-dir "$HOME/var/sicp/")
 
 ;; Applying this transformation twice, we get:
 ;; $$ S_0 = (a, b) $$

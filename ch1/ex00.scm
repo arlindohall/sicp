@@ -1,6 +1,4 @@
 ;; This is an example of how the exercises are structured
-(define default-dir "$HOME/var/sicp/")
-
 (define (do-nothing) #t) ;; Can set this to false to fail test
 
 (assert (do-nothing) "Expected nothing to happen without issue")

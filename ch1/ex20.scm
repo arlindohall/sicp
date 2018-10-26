@@ -1,8 +1,6 @@
 ;; ## Exercise 1.20
 ;; Interpreting the expression `(gcd 206 40)` using normal-order evaluation,
 ;;   and given the definition of `gcd`:
-(define default-dir "$HOME/var/sicp/")
-
 (define (gcd a b)
   (if (= b 0)
       a

@@ -1,3 +1,5 @@
+(define (square x) (* x x))
+
 (define (sqrt-iter guess x)
   (if (good-enough? guess x)
       guess

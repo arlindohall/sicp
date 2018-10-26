@@ -6,8 +6,6 @@
 ;; uses the resulting operator to evaluate the whole expression. Thus we
 ;; expect the predicate to evaluate to "true", which in scheme is represented
 ;; as `#t`
-(define default-dir "$HOME/var/sicp/")
-
 (define (abs x)
   (if (< x 0) (- x) x))
 

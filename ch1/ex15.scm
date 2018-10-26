@@ -1,6 +1,5 @@
 ;; Exercise 1.15
 ;; With the recursive definition of `sine` as shown below, 
-(define default-dir "$HOME/var/sicp/")
 (load "util/close.scm")
 
 (define (sine angle)

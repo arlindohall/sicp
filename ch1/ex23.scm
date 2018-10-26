@@ -1,7 +1,6 @@
 ;; Exercise 1.23
 ;; For this procedure, we'll be extending the `find-divisor` procedure with
 ;;    the `next` procedure, which cuts the number of comparisons down by half.
-(define default-dir "$HOME/var/sicp/")
 (load "ch1/ex22.scm")
 
 (timed-prime-test 1000003)
