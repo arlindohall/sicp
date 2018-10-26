@@ -11,10 +11,10 @@
 (define (timed-prime-test n)
   ;; (newline) Do not display each number
   ;; (display n)
-  (start-prime-test n (runtime)))
+  (start-prime-test n (real-time-clock)))
 (define (start-prime-test n start-time)
   (if (prime? n)
-      (and (report-prime n (- (runtime) start-time)) #t) ;; Extend this program to return isprime?
+      (and (report-prime n (- (real-time-clock) start-time)) #t) ;; Extend this program to return isprime?
       #f))
 (define (report-prime n elapsed-time)
   ;; (newline)
