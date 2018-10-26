@@ -12,7 +12,7 @@
 ;; demonstrating the infinite regress of the new-if statement would break the
 ;; process, so it will be "left as an exercise to the reader".
 (define default-dir "$HOME/var/sicp/")
-(load "sqrt.scm")
+(load "util/sqrt.scm")
 
 (define (new-if predicate then-clause else-clause)
   (cond (predicate then-clause)
