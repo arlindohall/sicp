@@ -2,6 +2,8 @@
 ;; Implement the Miller-Rabin test
 (load "util/square.scm")
 
+;; TODO: this is actually not working at all. I need to revisit
+;; later and try to really understand the math
 ;; I ripped this straight off of community.schemewiki.org
 ;; I could not understand the question the way it was worded
 (define (expmod base exp m)
@@ -25,7 +27,7 @@
 (define (miller-rabin-iter n a)
   (cond ((= a n) #t)
         ;; If a^(n-1) congurent to 1 modulo n
-        ((= 1 (expmod a (- n 1) n)) (miller-raabin-iter n (+ a 1)))
+        ((= 1 (expmod a (- n 1) n)) (miller-rabin-iter n (+ a 1)))
         (else #f)))
 
 (assert (miller-rabin 19)) ;; Prime number that fermat's test finds

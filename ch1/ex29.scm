@@ -1,8 +1,7 @@
 ;; Example 29
-
+(load "util/acc.scm")
 (load "util/close.scm")
 (load "util/square.scm")
-(load "util/sum.scm")
 
 (define (simpson-integral f a b n)
   (define (inc x) (+ x 1))
