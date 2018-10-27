@@ -1,14 +1,19 @@
-(define (sum term a next b)
-  (define (iter a result)
-    (if (> a b)
-		0
-        (iter (next a) (+ result (term a)))
-  (iter a b))
+;; Example 29
 
-(define (sum-integers a b)
-  (sum (lambda (x) x)
- 	   a
-	   (lambda (x) (+ x 1))
-	   b))
+(load "util/close.scm")
+(load "util/square.scm")
+(load "util/sum.scm")
 
-(assert (equal? (sum-integers 1 10) 55))
+(define (simpson-integral f a b n)
+  (define (inc x) (+ x 1))
+  (define h (/ (- b a) n))
+  (define (y k) (f (+ a (* k h))))
+  (define (term k)
+    (cond ((or (= k 0) (= k n)) (y k))
+          ((odd? k) (* 4 (y k)))
+          (else (* 2 (y k)))))
+  (* (/ h 3)
+     (sum term 0 inc n)))
+
+(assert (close? (simpson-integral cube 0 1 100) 0.25))
+(assert (close? (simpson-integral cube 0 1 1000) 0.25))
