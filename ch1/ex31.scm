@@ -1,5 +1,5 @@
 ;; Example 1.31
-(load "util/square.scm")
+(load "util/math.scm")
 (load "util/close.scm")
 
 ;; Definition of product iterative and recursive

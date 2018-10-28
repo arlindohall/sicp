@@ -1,5 +1,5 @@
 ;; Exercise 1.27
-(load "util/square.scm")
+(load "util/math.scm")
 (load "ch1/ex22.scm")
 
 ;; (a^n modulo n)

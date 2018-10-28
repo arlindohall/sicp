@@ -1,6 +1,6 @@
 ;; Exercise 1.28
 ;; Implement the Miller-Rabin test
-(load "util/square.scm")
+(load "util/math.scm")
 
 ;; TODO: this is actually not working at all. I need to revisit
 ;; later and try to really understand the math

@@ -1,4 +1,4 @@
-(load "util/square.scm")
+(load "util/math.scm")
 
 ;; Prime
 (define (smallest-divisor n)
