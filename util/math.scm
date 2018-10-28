@@ -29,3 +29,10 @@
 
 (assert (equal? (cube 2) 8))
 (assert (equal? (cube 1) 1))
+
+;; Increment and decrement
+(define (inc x) (+ x 1))
+(define (dec x) (- x 1))
+
+(assert (equal? (inc 1) 2))
+(assert (equal? (dec 10) 9))
