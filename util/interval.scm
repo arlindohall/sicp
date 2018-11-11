@@ -17,8 +17,6 @@
 
 (define (make-interval a b) (cons a b))
 
-;; Exercise:
-
 (define (lower-bound interval)
   (car interval))
 (define (upper-bound interval)
@@ -31,3 +29,11 @@
 
 (assert (= (lower-bound test-result) 2))
 (assert (= (upper-bound test-result) 4))
+
+(define test-div-result (div-interval test1 test2))
+(define test-mul-result (mul-interval test1 test2))
+
+(assert (= (lower-bound test-div-result) .2))
+(assert (= (upper-bound test-div-result) 1))
+(assert (= (lower-bound test-mul-result) .75))
+(assert (= (upper-bound test-mul-result) 3.75))
