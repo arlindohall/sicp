@@ -1,5 +1,5 @@
 ;; Exercise 2.3
-(load "ch2/ex2.scm")
+(load "ch2/ex02.scm")
 
 ;;;;;;;;;; INTERFACE ;;;;;;;;;; 
 ;; (perimeter-rectangle r)
